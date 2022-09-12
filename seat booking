@@ -1,4 +1,4 @@
-# train booking
+# train seat booking
 class train:
    def __init__(self,name,fare,seats):
       self.name=name
