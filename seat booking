@@ -1,1 +1,22 @@
+# train booking
+class train:
+   def __init__(self,name,fare,seats):
+      self.name=name
+      self.seats=seats
+      self.fare=fare
+   def getstatus(self):
+      print(f"the name of the train is {self.name}")   
+      print(f"the fare of the train is {self.fare}")   
+      print(f"seats left in the train are {self.seats}")   
+   def bookticket(self):
+      if len(self.seats)>0:
+       print(f"your seat is booked")
+       print(f"your seat no. is {self.seats[-1]}")
+       self.seats.pop(-1)
+      else:
+       print("sorry, we have no vacant seats.kindly try in acd express")
+    
+abc=train("abc express",99999,[1,2])      
+abc.getstatus()
+abc.bookticket()
 
