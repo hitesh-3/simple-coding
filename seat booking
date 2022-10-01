@@ -15,6 +15,13 @@ class train:
        self.seats.pop(-1)
       else:
        print("sorry, we have no vacant seats.kindly try in acd express")
+   def cancelticket(self,seatnumber):
+       self.seatnumber=seatnumber
+       if self.seatnumber in self.seats:      
+        print (f"your seat no. {self.seatnumber} is cancelled") 
+        self.seats.append(self.seatnumber) 
+       else:
+        print("we do not have this seat number")    
     
 abc=train("abc express",99999,[1,2])      
 abc.getstatus()
